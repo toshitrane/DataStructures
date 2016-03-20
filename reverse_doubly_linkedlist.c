@@ -19,7 +19,6 @@
      return new_node;
  }
 
-/*
  void reverse_doubly(struct node** head)
  {
      struct node* temp = NULL;
@@ -39,26 +38,7 @@
      }
      *head = current;
  }
-*/
 
-void reverse_doubly(struct node** head)
- {
-     struct node* temp = NULL;
-     struct node* current = *head;
-     if (*head == NULL)
-     {
-         printf("\nEmpty === Reverse");
-         return;
-     }
-     while ( current!= NULL)
-     {
-         current -> previous = current ->next;
-         current -> next = temp;
-         temp=current;
-         current= current -> previous;
-     }
-     *head = temp;
- }
 
 void doubly_create(int data, struct node** head)
  {
