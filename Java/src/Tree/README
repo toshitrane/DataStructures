@@ -1,0 +1,29 @@
+                                o
+                               / \
+                              o   o
+                             / \ / \
+                            o  o o  o
+
+
+
+* Two types of trees
+** Ordered tree:
+    Is one in which the children of each node are ordered. (Usually in in a logical order)
+** Binary tree
+    Ordered tree with all nodes having at most 2 children.
+
+
+For Complete Binary tree:
+
+* At any given level i iot has 2^i nodes.
+
+* In a tree of height h
+** leaves are at level h
+** No. of leaves is 2^h
+** No. of internal nodes = 2^h -1 i.e (No. of leaves -1)
+** Total No. of nodes = 2^(h+1)-1 = n
+
+* In a tree of n nodes
+** No. of leaves is (n+1)/2
+** Height = log2 (No. of leaves)
+
